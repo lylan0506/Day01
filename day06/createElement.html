@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #lstBooks {
+        color: red;
+    }
+</style>
+
+</head>
+<body>
+    <script>
+
+       const oElement = document.createElement('ul')
+       oElement.setAttribute('id',"lstBooks")
+       document.body.appendChild(oElement)
+       const oItem1 = document.createElement('li')
+       oItem1.setAttribute('class','book')
+       oItem1.appendChild(oItem1)
+       //文本节点
+       const oText1 = document.createTextNode('javaScirpt')
+       oItem1.appendChild(oText1)
+
+//创建第二个节点
+       const oItem2= document.createElement('li')
+       oItem2.setAttribute('class','book')
+       oElement.appendChild(oItem2)
+       const oText2 = document.createTextNode('python')
+       oItem2.appendChild(oText2)
+//
+       const oItem3 = document.createElement('li')
+       oItem3.setAttribute('class','book')
+       oItem3.appendChild(oItem3)
+       const oText3 = document.createTextNode('java')
+       oItem1.appendChild(oText3)
+      //
+      const oItem4 = document.createElement('li')
+       oItem4.setAttribute('class','book')
+       oItem4.appendChild(oItem4)
+       const oText4 = document.createTextNode('c++')
+       oItem1.appendChild(oText4)
+
+       oFrag
+
+
+
+    </script>
+
+
+
+</body>
+</html>
