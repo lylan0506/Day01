@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./b_logo.png" alt="logo">
+
+    <script>
+
+        window.addEventListener('load',(e)=>{
+            alert('test')
+        })
+
+
+        const oImg = document.querySelector('img')
+
+        oImg.addEventListener('load',(e)=> {
+            alert('图片加载之前弹出')
+        })
+
+
+        // oImg.addEventListener('error',(e)=>{
+        //     alert("大哥，图片不存在啊！")
+        // })
+
+        
+        window.addEventListener('unload',(e)=>{
+
+            alert("unload")
+        })
+    </script>
+</body>
+</html>
